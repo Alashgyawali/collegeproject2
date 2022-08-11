@@ -1,6 +1,7 @@
 <?php
 if(isset($_POST['btn']) && isset($_GET['id'])){
         session_start();
+        $curdate=$_POST['date'];
 
         $id = $_GET['id'];
         $qty=$_POST['quantity'];
@@ -16,7 +17,7 @@ if(isset($_POST['btn']) && isset($_GET['id'])){
         $userid = $_SESSION['client-userid'];
        
         $username= $_SESSION['client-clientname']; 
-        $query = "INSERT INTO orders VALUES(NULL,'$username','$userid','$id','$qty',NOW())";
+        $query = "INSERT INTO orders VALUES(NULL,'$username','$userid','$id','$qty','$curdate')";
         $run = mysqli_query($con, $query);
         $query1="DELETE FROM cart WHERE userid='$userid' AND productid='$id'";
         $run1=mysqli_query($con,$query1);

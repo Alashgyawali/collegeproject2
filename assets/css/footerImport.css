@@ -130,7 +130,7 @@ footer .content .link-boxes .box{
 .content .link-boxes .box li a{
   color: black;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500;   
   text-decoration: none;
   opacity: 1;
   transition: all 0.4s ease

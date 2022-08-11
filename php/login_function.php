@@ -9,9 +9,7 @@ if(isset($_POST['submit'])){
     if($rows>0){
         $data=mysqli_fetch_array($run);
         // echo $data['username']."/".$data['password'];
-        session_start();
-
-        
+        session_start();   
         $_SESSION['client-username'] = $data['email'];  
         $_SESSION['client-password'] = $data['password'];  
         $_SESSION['client-clientname'] = $data['clientname'];  

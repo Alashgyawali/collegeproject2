@@ -183,6 +183,35 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
         .burger{
             display: block;
         }
+        .search{
+            display: flex !important;
+            justify-content: space-around !important;
+            /* flex-direction:  !important; */
+            padding:20px 0px !important;
+            /* background-color: red; */
+            width: 100% !important;
+
+        }
+        .search .input{
+            width:80%;
+        }
+        .search .input input{
+            width: 80%!important;
+            height: 40px !important;
+            border-radius: 5px !important;
+            border: 1px solid #e5e5e5 !important; ;
+            padding: 0 10px !important;
+            font-size: 14px !important;
+            margin-right: 10px !important;
+        }
+        .search .searchicon{
+            width: 20px; !important;
+            height: 30px !important;
+            border-radius: 50% !important;
+            background-color: #e5e5e5 !important;
+            margin-right: 10px !important;
+            cursor: pointer !important;
+        }
         .menu{
             display: none;
         }
@@ -211,6 +240,10 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
             width: 100%;
            
            
+        }
+        .search{
+            padding: 20px;
+            width: 100px;
         }
        .form button{
         background-color: #FDF7F0;
@@ -253,32 +286,35 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
                             <li><a href="./index.php">Home</a></li>
                             <li class="dropdown">
                                 <a href="#">
-                                    Categories
+                                    dummy
 
                                 </a>
 
                                 <ul class="dropdownMenu">
-                                    <li><a href="#">Electronic</a></li>
-                                    <li><a href="#">Clothes</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">dummy</a></li>
+                                    <li><a href="#">dummy</a></li>
+                                    <li><a href="#">dummy</a></li>
+                                    <li><a href="#">dummy</a></li>
                                 </ul>
 
                             </li>
-                            <li class="dropdown"><a href="#">Brands</a>
+                            <li class="dropdown"><a href="#">dummy</a>
                                 <ul class="dropdownMenu">
 
-                                    <li><a href="#">Apple</a></li>
-                                    <li><a href="#">Samsungs</a></li>
-                                    <li><a href="#">Adidas</a></li>
-                                    <li><a href="#">Nike</a></li>
+                                    <li><a href="#">dummy</a></li>
+                                    <li><a href="#">dummy</a></li>
+                                    <li><a href="#">dummy</a></li>
+                                    <li><a href="#">dummy
+                                        
+                                    </a></li>
 
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="#">Gender</a>
+                            <li class="dropdown"><a href="#">dummy
+                            </a>
                                 <ul class="dropdownMenu">
-                                    <li><a href="#">Male</a></li>
-                                    <li><a href="#">Female</a></li>
+                                    <li><a href="#">dummy</a></li>
+                                    <li><a href="#">dummy</a></li>
 
 
 
@@ -316,7 +352,7 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
         </div>
         <div class="mobileMenu">
              <ul>
-                <li><a href="#">Home</a>
+                <li><a href="./index.php">Home</a>
                 <li><a href="./cart.php?id=<?php echo $_SESSION['client-clientname'] ?>"><i class="uil uil-shopping-cart-alt"></i></a></li>
                 <li><a href="#">Gender</a>
                 <li><a href="#">Brands</a>
@@ -325,11 +361,11 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
              </ul>
         </div>
     </div>
-    <form action="index.php" method="getx`">
+    <form action="index.php" method="get">
         
         <div class="search">
                     <div class="input">
-                        <input type="search" placeholder="Enter a product Name">
+                        <input type="search" placeholder="Enter a product Name" name="keywords">
     
                     </div>
                     <div class="iconSearch">
@@ -493,6 +529,7 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
           <li><a href="#">My account</a></li>
           <li><a href="#">Prefrences</a></li>
           <li><a href="#">Purchase</a></li>
+          <li><a href="./history.php">History</a></li>
         </ul>
         <ul class="box">
           <li class="link_name">Brands</li>

@@ -8,7 +8,7 @@
         padding: 0;
     }
     body{
-        background-color: #67EEA1;
+        background-color: #F5ECE0;
         padding: 20px 30px;
     }
     td, th{
@@ -79,6 +79,7 @@ if(isset($_SESSION['client-userid'])){
               <tr style="border: 1px solid black;">
                 <th>Product id</th>
                 <th>Product Name</th>
+                <th>Product qty</th>
                 <th>Product Price</th>
                 <th>Product Image</th>
                 <th colspan=""> Product Description</th>
@@ -92,6 +93,7 @@ if(isset($_SESSION['client-userid'])){
                     <td><?php echo $data['productid']; ?></td>
 
                      <td><?php echo $data['productname']; ?></td>
+                        <td><?php echo $data['qty']; ?></td>
                      <td><?php echo $data['productprice']; ?></td>
                         <td>
                             <img src="./dynamicImage/<?php echo $data['productimage'] ?>" width="100px" height="100px">

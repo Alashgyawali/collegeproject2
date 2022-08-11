@@ -2,16 +2,17 @@
 ?>
 <style>
     .main{
-        width: 100%;
+        width: 800px;
         display: flex;
         justify-content: center;
     }
 
     form{
         /* background-color: red; */
-        height: 50%;
+        width: 500px !important;
+        height: 80% !important;
         padding: 10px 20px;
-        width: 26.5%;
+        /* width: 26.5%; */
         margin-top: 10px;
         /* border: 2px solid black; */
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -52,6 +53,40 @@
          background-color: #67EEA1;
          color: #FDF7F0;
    }
+   @media screen and (min-width:800px
+   ){
+
+    .main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        /* background-color: red; */
+        align-items: center;
+    }
+    .first{
+        width: 100% !important;
+        height: 80% !important;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    span{font-weight:600 ; font-size:1.2rem ;}
+    .main form{
+        width: 50%;
+        height: 50%;
+        display:flex;
+        flex-direction: column;
+    }
+    .main form img{
+        width: 300px;
+        height: 300px;
+    }
+
+
+}
+
+
   
    
 </style>
@@ -105,7 +140,8 @@
                       
                                 <div class="last">
     
-                                    <span>qty</span> <input type="number" name="quantity" min="1" max="5" >
+                                    <span>qty</span> <input type="number" name="quantity" min="1" max="5" onfocus="this.parentNode.children[2].value = new Date().toLocaleString()">
+                                    <input type="text" hidden name="date"  value="">
                                     <button name="btn">Buynow</button>
                           </div>
                         </form>
