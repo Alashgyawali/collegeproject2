@@ -69,8 +69,8 @@
 
                             </ul>
                         </li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./about.php">About</a></li>
+                        <li><a href="./contact.php">Contact</a></li>
                         <li sty><a href="./php/login.php">login</a></li>
 
                     </ul>
@@ -110,7 +110,8 @@
             <!--  dynamic -->
             <div class="cards">
                 <?php
-                    $conn = mysqli_connect("localhost", "root", "", "ecommers");
+                    // $conn = mysqli_connect("localhost", "root", "", "ecommers");
+                    include './database.php';
                     if(isset($_GET['keywords'])) {
                         $keyword = $_GET['keywords'];
                         $query = "SELECT * FROM product WHERE productName='$keyword' OR id='$keyword' OR productPrice='$keyword' ";

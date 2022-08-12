@@ -5,7 +5,7 @@ if(isset($_POST['btn'])){
     $password=$_POST['password'];
     $cpassword=$_POST['cpassword'];
     $checkbox=$_POST['checkbox'];
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    include '../database.php';
     $query="INSERT INTO client(clientname,email,password,cpassword,checkbox) VALUES('$name','$email','$password','$cpassword','$checkbox')";
     if($password==$cpassword){
         $run=mysqli_query($conn,$query);

@@ -38,7 +38,8 @@ tr{
         session_start();
         if( $_SESSION['client-userid']){
             $id= $_SESSION['client-userid'];
-            $conn=mysqli_connect("localhost","root","","ecommers");
+            // $conn=mysqli_connect("localhost","root","","ecommers");
+            include './database.php';
             $query="SELECT * FROM orders WHERE userid='$id'";
             $run=mysqli_query($conn,$query);
             ?>

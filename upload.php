@@ -20,7 +20,8 @@ if(isset($_POST['btn'])){
                 $fileDestination = 'dynamicImage/'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
                 
-                $conn=mysqli_connect("localhost","root","","ecommers");
+                // $conn=mysqli_connect("localhost","root","","ecommers");
+                include './database.php';
                 $query="INSERT INTO product(productName, productPrice,productImage, productDescription) VALUES ('$productName','$productPrice','$fileNameNew','$productDescription')";
                 $run=mysqli_query($conn,$query);
                 if($run){

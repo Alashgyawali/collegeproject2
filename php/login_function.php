@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    include '../database.php';
     $username=$_POST['email'];
     $password=$_POST['password'];
     $query="SELECT * FROM client WHERE email='$username' AND password='$password' ";

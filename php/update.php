@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['id'])){
     $id=$_GET['id'];
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    include '../database.php';
     $query="SELECT * FROM product WHERE id='$id'";
     $run=mysqli_query($conn,$query);
     $data=mysqli_fetch_array($run);

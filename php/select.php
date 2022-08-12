@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    include '../database.php';
     $email=$_POST['email'];
     $password=$_POST['password'];
    

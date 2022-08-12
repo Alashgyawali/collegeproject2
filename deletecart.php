@@ -3,7 +3,8 @@ if(isset($_GET['id'])){
     $id=$_GET['id'];
 
     
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    // $conn=mysqli_connect("localhost","root","","ecommers");
+    include './database.php';
     $query="DELETE FROM cart WHERE id='$id'";
     $run=mysqli_query($conn,$query);
     if($run){

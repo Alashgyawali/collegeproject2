@@ -6,7 +6,7 @@ if(isset($_POST['update']) && isset($_GET['id'])){
     $newName=$_POST['newName'];
     $newPrice=$_POST['newPrice'];
     $newDescription=$_POST['newDescription'];
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    include '../database.php';
     $query="UPDATE product SET productName='$newName', productPrice='$newPrice', productDescription='$newDescription' WHERE id='$id'";
     $run=mysqli_query($conn,$query);
     if($run){

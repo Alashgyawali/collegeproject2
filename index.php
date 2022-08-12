@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])) {
-    header('Location:./php/login.php');
+    header('Location:./ecommers.php');
 }
 ?>
 <!DOCTYPE html>
@@ -205,7 +205,7 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
             margin-right: 10px !important;
         }
         .search .searchicon{
-            width: 20px; !important;
+            width: 20px !important;
             height: 30px !important;
             border-radius: 50% !important;
             background-color: #e5e5e5 !important;
@@ -320,8 +320,8 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
 
                                 </ul>
                             </li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./about.php">About</a></li>
+                            <li><a href="./contact.php">Contact</a></li>
                             <li > <a href="./cart.php?id=<?php echo $_SESSION['client-clientname'] ?>">
                             <i  id="notification" class="uil uil-shopping-cart-alt">
 
@@ -356,7 +356,7 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
                 <li><a href="./cart.php?id=<?php echo $_SESSION['client-clientname'] ?>"><i class="uil uil-shopping-cart-alt"></i></a></li>
                 <li><a href="#">Gender</a>
                 <li><a href="#">Brands</a>
-                <li><a href="#">About</a></li>
+                <li><a href="./about.html">About</a></li>
                 <li><a href="#">Contact</a></li>
              </ul>
         </div>
@@ -382,7 +382,8 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
 
                 <div class="cards">
                     <?php
-                    $conn = mysqli_connect("localhost", "root", "", "ecommers");
+                    // $conn = mysqli_connect("localhost", "root", "", "ecommers");
+                    include './database.php';
                     if (isset($_GET['keywords'])) {
                         $keyword = $_GET['keywords'];
                         $query = "SELECT * FROM product WHERE productName='$keyword' OR id='$keyword' OR productPrice='$keyword' ";

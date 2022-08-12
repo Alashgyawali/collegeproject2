@@ -52,7 +52,8 @@
                 <th style="background-color: gray;">Actions</th>
             </tr>
             <?php
-            $conn=mysqli_connect("localhost","root","","ecommers");
+            include '../../database.php';
+            // $conn=mysqli_connect("localhost","root","","ecommers");
             $query="SELECT * FROM product";
             $run=mysqli_query($conn,$query);
             while($data=mysqli_fetch_array($run)){

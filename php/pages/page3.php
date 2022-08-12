@@ -4,7 +4,9 @@
         <!-- <span>3</span>
  <span>hellos</span> -->
  <?php
-        $con = mysqli_connect("localhost", "root", "", "ecommers");
+                    include '../../database.php';
+        // $con = mysqli_connect("localhost", "root", "", "ecommers");
+
         $query = "SELECT * FROM orders";
         $run = mysqli_query($con, $query);
         ?>

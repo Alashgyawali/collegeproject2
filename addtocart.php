@@ -2,7 +2,8 @@
 session_start();
 if(isset($_GET['id'])){
     $id=$_GET['id'];
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    // $conn=mysqli_connect("localhost","root","","ecommers");
+    include './database.php';
    
     $query2="SELECT * FROM cart WHERE productid='$id'";
     $run2=mysqli_query($conn,$query2);

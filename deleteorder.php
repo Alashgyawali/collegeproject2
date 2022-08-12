@@ -1,7 +1,8 @@
 <?php
 if(isset($_GET['id'])){
     $id=$_GET['id'];
-    $conn=mysqli_connect("localhost","root","","ecommers");
+    // $conn=mysqli_connect("localhost","root","","ecommers");
+    include './database.php';
     $query="DELETE FROM orders WHERE id='$id'";
     // $result=mysqli_query($conn,$query1);
     // $row=mysqli_fetch_array($result);
