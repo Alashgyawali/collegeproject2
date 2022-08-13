@@ -27,7 +27,7 @@
       </div>
       <div class="policy">
         <input type="checkbox" name="checkbox" required>
-        <h3>I accept all terms & condition</h3>
+        <h3>I accept all <a href="../privacy.html">terms & condition</a></h3>
       </div>
       <div class="input-box button">
         <input type="Submit" name="btn" value="Register Now">

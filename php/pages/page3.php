@@ -4,11 +4,11 @@
         <!-- <span>3</span>
  <span>hellos</span> -->
  <?php
-                    include '../../database.php';
+include '../database.php';
         // $con = mysqli_connect("localhost", "root", "", "ecommers");
 
         $query = "SELECT * FROM orders";
-        $run = mysqli_query($con, $query);
+        $run = mysqli_query($conn, $query);
         ?>
         <style>
                 .table{

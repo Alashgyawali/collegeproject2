@@ -60,10 +60,10 @@
 
                             </ul>
                         </li> -->
-                        <li class="dropdown"><a href="#">Gender</a>
+                        <li class="dropdown"><a href="#">Dummy</a>
                             <ul class="dropdownMenu">
-                                <li><a href="#">Male</a></li>
-                                <li><a href="#">Female</a></li>
+                                <li><a href="#">Dummy</a></li>
+                                <li><a href="#">Dummy</a></li>
 
 
 

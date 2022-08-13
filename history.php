@@ -13,7 +13,8 @@ table th{
 }
 table td{
     border: 1px solid black;
-    background-color: green;
+    /* background-color: green; */
+    background-color: #F6EBDE;
 
 }
 tr{

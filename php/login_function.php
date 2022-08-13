@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
         ?>
         <script>
             alert('User Not Found');
-            window.open('../index.php','_self');
+            window.open('./login.php','_self');
         </script>
         <?php
     }
