@@ -21,8 +21,7 @@ if(isset($_POST['btn']) && isset($_GET['id'])){
         $query = "INSERT INTO orders VALUES(NULL,'$username','$userid','$id','$qty','$curdate')";
         $run = mysqli_query($conn, $query);
         $query1="DELETE FROM cart WHERE userid='$userid' AND productid='$id'";
-        $run1=mysqli_query($con
-        n,$query1);
+        $run1=mysqli_query($conn,$query1);
         if($run && $run1) {
             echo "<script>alert('Product Purchased SuccessFully ')</script>";
             echo "<script>window.open('./index.php','_self')</script>";

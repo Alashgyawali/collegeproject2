@@ -34,6 +34,7 @@ session_start();
             align-items: center;
             background-color: #f5f5f5;
         }
+
         .thoughtOne{
             width: 100%;
             /* height: 100%; */
@@ -116,7 +117,7 @@ session_start();
                     <ul class="menu">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contact.php">Contact</a></li>
                         <!-- <li sty><a href="./php/login.php">login</a></li> -->
                     </ul>
                 </div>

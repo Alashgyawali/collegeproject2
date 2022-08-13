@@ -2,6 +2,7 @@
 session_start();
 if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])) {
     header('Location:./ecommers.php');
+
 }
 ?>
 <!DOCTYPE html>
@@ -357,7 +358,7 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
                 <li><a href="#">Gender</a>
                 <li><a href="#">Brands</a>
                 <li><a href="./about.html">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contact.php">Contact</a></li>
              </ul>
         </div>
     </div>

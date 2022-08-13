@@ -34,7 +34,7 @@ if(isset($_POST['btn'])){
                 ?>
                 <script>
                     alert('User Registered Successfully');
-                    window.open('../index.php','_self');
+                    window.open('./login.php','_self');
                 </script>
                 <?php
             }
@@ -43,7 +43,7 @@ if(isset($_POST['btn'])){
             ?>
             <script>
                 alert('Password Does Not Match');
-                window.open('../index.php','_self');
+                window.open('./signup.php','_self');
             </script>
             <?php
         }

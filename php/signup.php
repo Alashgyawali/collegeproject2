@@ -14,7 +14,7 @@
     <h2>Registration</h2>
     <form action="./insert.php" method="POST">
       <div class="input-box">
-        <input type="text" placeholder="Enter your name" name="name" minlength="8" required>
+        <input type="text" placeholder="Enter your name" name="name" minlength="5" required>
       </div>
       <div class="input-box">
         <input type="text" placeholder="Enter your email" name="email" minlength="8" required>
@@ -26,7 +26,7 @@
         <input type="password" placeholder="Confirm password" name="cpassword" minlength="8" required>
       </div>
       <div class="policy">
-        <input type="checkbox" name="checkbox" required>
+        <input type="checkbox" name="checkbox">
         <h3>I accept all <a href="../privacy.html">terms & condition</a></h3>
       </div>
       <div class="input-box button">

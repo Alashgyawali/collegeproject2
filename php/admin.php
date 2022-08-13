@@ -45,35 +45,35 @@ if(!isset($_SESSION['username']) || !isset($_SESSION['password'])){
         </li>
         <li class="analytics">
           <a href="#">
-            <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Analytics</span>
+          <i class='bx bxs-message-rounded'></i>
+            <span class="links_name">Messages</span>
           </a>
         </li>
-        <li class="stock">
+        <!-- <li class="stock">
           <a href="#">
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Stock</span>
           </a>
-        </li>
+        </li> -->
         <li class="total_order">
           <a href="#">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">Total order</span>
           </a>
         </li>
-        <li class="team">
+        <!-- <li class="team">
           <a href="#">
             <i class='bx bx-user' ></i>
             <span class="links_name">Team</span>
           </a>
-        </li>
-        <li class="message">
+        </li> -->
+        <!-- <li class="message">
           <a href="#">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
           </a>
-        </li>
-        <li class="favourite">
+        </li> -->
+        <!-- <li class="favourite">
           <a href="#">
             <i class='bx bx-heart' ></i>
             <span class="links_name">Favourites</span>
@@ -84,7 +84,7 @@ if(!isset($_SESSION['username']) || !isset($_SESSION['password'])){
             <i class='bx bx-cog' ></i>
             <span class="links_name">Setting</span>
           </a>
-        </li>
+        </li> -->
         <li class="log_out" onclick="logout()">
           <a href="./logoutadmin.php">
             <i class='bx bx-log-out'></i>
