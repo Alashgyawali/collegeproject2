@@ -51,31 +51,20 @@
     table{
         width: 100%;
         border-collapse: collapse;
-    }
-    
-   
+    }  
 </style>
 <?php
-
 session_start();
 if(isset($_SESSION['client-userid'])){
-
-
     // $conn=mysqli_connect("localhost","root","","ecommers");
     include './database.php';
     $query="SELECT * FROM cart where userid='".$_SESSION['client-userid']."'";
     $run=mysqli_query($conn,$query);
-    // $rows=mysqli_num_rows($run);
-    // $data=mysqli_fetch_array($run);
     if($run){
        ?>
         <div class="margin">
         <a class="back" href="./index.php"><i class="uil uil-angle-left-b"></i></a>
-
         </div>
-                  
-        
-         
        <table style="border: 1px solid black;">
               <tr style="border: 1px solid black;">
                 <th>Product id</th>
@@ -88,8 +77,7 @@ if(isset($_SESSION['client-userid'])){
               </tr>
               <?php
               while($data=mysqli_fetch_array($run)){
-                ?>
-               
+                ?>             
                 <tr >
                     <td><?php echo $data['productid']; ?></td>
 

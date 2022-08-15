@@ -10,7 +10,7 @@
     form{
         /* background-color: red; */
         width: 500px !important;
-        height: 80% !important;
+        height: 90% !important;
         padding: 10px 20px;
         /* width: 26.5%; */
         margin-top: 10px;
@@ -29,7 +29,8 @@
         margin-top: 8px;
     }
     img{
-        width: 50%;
+        width: 40% !important;
+        height: 50% !important;
     }
     .last{
         width: 100%;
@@ -122,9 +123,11 @@
                                 ?>
                                 <br><br>
                                 <span>productPrice</span>
-                                <?php
-                                echo $data['productPrice'];
-                                ?>
+                                <span id="pricePer">
+                                    <?php
+                                    echo $data['productPrice'];
+                                    ?>
+                                </span>
                                 <br><br>
                                 <span>productImage</span>
                                 <?php
@@ -141,11 +144,22 @@
                       
                                 <div class="last">
     
-                                    <span>qty</span> <input type="number" name="quantity" min="1" max="5" onfocus="this.parentNode.children[2].value = new Date().toLocaleString()">
+                                    <span>qty</span> <input type="number"  name="quantity" min="1" max="5" onkeyup="handleUpdate()" onfocus="this.parentNode.children[2].value = new Date().toLocaleString()">
                                     <input type="text" hidden name="date"  value="">
+                                    <span id="total">Total</span>
+                                    <span><?php ?></span>
                                     <button name="btn">Buynow</button>
                           </div>
                         </form>
+                        <script>
+                            function handleUpdate() { 
+                                let quantity = document.querySelector('input[name="quantity"]');
+                                let price = document.querySelector('#pricePer');
+                                let total = document.querySelector('#total');
+
+                                total.innerText = "Total " + quantity.value * +price.innerText; 
+                            }
+                        </script>
                   </div>
                   
                  <?php

@@ -75,9 +75,9 @@ if($result){
             </ul>
             <ul class="details">
               <li class="topic">Total</li>
-              <li><a href="#">30$</a></li>
-              <li><a href="#">15$</a></li>
-              <li><a href="#">30$</a></li>
+              <li><a href="#">3000Rs</a></li>
+              <li><a href="#">1500Rs</a></li>
+              <li><a href="#">3000Rs</a></li>
 
             </ul>
             </div>
@@ -93,20 +93,20 @@ if($result){
                 <!--<img src="images/bag.jpg" alt="">-->
                 <span class="product">VIRAT BAG </span>
               </a>
-              <span class="price">30$</span>
+              <span class="price">3000Rs</span>
             <li>
               <a href="#">
                 <!--<img src="images/addidas.jpg" alt="">-->
                 <span class="product">BABY DRESS</span>
               </a>
-              <span class="price">15$</span>
+              <span class="price">1500Rs</span>
             </li>
             <li>
               <a href="#">
               <!--<img src="images/shirt.jpg" alt="">-->
                 <span class="product">TRACK SUIT</span>
               </a>
-              <span class="price">30$</span>
+              <span class="price">3000Rs</span>
             </li>
             </ul>
           </div>

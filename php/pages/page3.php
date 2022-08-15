@@ -1,5 +1,4 @@
-<?php
-?>
+
 <div class="page3" style="display: none;">
         <!-- <span>3</span>
  <span>hellos</span> -->
@@ -82,4 +81,6 @@ include '../database.php';
     
  
  </div>
+
+
 

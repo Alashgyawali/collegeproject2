@@ -61,12 +61,12 @@ if(!isset($_SESSION['username']) || !isset($_SESSION['password'])){
             <span class="links_name">Total order</span>
           </a>
         </li>
-        <!-- <li class="team">
+        <li class="team">
           <a href="#">
             <i class='bx bx-user' ></i>
-            <span class="links_name">Team</span>
+            <span class="links_name">clients</span>
           </a>
-        </li> -->
+        </li>
         <!-- <li class="message">
           <a href="#">
             <i class='bx bx-message' ></i>

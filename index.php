@@ -323,7 +323,7 @@ if (!isset($_SESSION['client-username']) || !isset($_SESSION['client-password'])
                             </li>
                             <li><a href="./about.php">About</a></li>
                             <li><a href="./contact.php">Contact</a></li>
-                            <li > <a href="./cart.php?id=<?php echo $_SESSION['client-clientname'] ?>">
+                            <li > <a href="./cart.php?id=<?php echo $_SESSION['client-userid'] ?>">
                             <i  id="notification" class="uil uil-shopping-cart-alt">
 
                                 </i>
